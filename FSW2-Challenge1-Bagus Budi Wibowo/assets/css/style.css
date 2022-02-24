@@ -48,8 +48,12 @@
 }
 
 .nav-link {
-  color: #000000;
+  color: #000000 !important;
   margin-right: 30px;
+}
+
+.nav-link:hover {
+  color: #303030 !important;
 }
 
 /* Style Hero */
@@ -99,8 +103,7 @@
   margin-left: 30px;
 }
 
-.service-item::before {
-  content: url("/Challenge-01/assets/icons/icon-check.png");
+.service-item__icon {
   transform: scale(0.6);
   position: absolute;
   left: -40px;
@@ -248,6 +251,10 @@
 @media only screen and (max-width: 575px) {
   .hero {
     height: 750px;
+  }
+
+  .hero-wrapper {
+    text-align: center;
   }
 
   .service-wrapper {
