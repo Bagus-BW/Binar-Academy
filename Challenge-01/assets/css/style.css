@@ -1,0 +1,268 @@
+/* Style GLobal */
+.bg-white-blue {
+  background-color: #f1f3ff;
+}
+
+.rectangle {
+  display: block;
+  background-color: #0d28a6;
+  width: 100px;
+  height: 35px;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.btn-green {
+  color: #ffffff;
+  background-color: #5cb85f;
+}
+
+.btn-green:hover {
+  color: #ffffff;
+  background-color: #7cc67e;
+}
+
+.content-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.content-subtitle {
+  margin-top: 25px;
+}
+
+/* Style Header */
+.header {
+  position: relative;
+}
+
+/* Style Navbar */
+
+.navbar {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f3ff;
+}
+
+.nav-link {
+  color: #000000;
+  margin-right: 30px;
+}
+
+/* Style Hero */
+
+.hero {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 60px;
+  background-color: #f1f3ff;
+}
+
+.hero-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.hero-subtitle {
+  margin-top: 20px;
+}
+
+.hero-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  width: 600px;
+}
+
+/* Style Service */
+
+.service {
+  padding-top: 100px;
+}
+
+.service-img {
+  width: 400px;
+}
+
+.service-items {
+  padding: 0;
+}
+
+.service-item {
+  position: relative;
+  line-height: 30px;
+  list-style-type: none;
+  margin-left: 30px;
+}
+
+.service-item::before {
+  content: url("/Challenge-01/assets/icons/icon-check.png");
+  transform: scale(0.6);
+  position: absolute;
+  left: -40px;
+  top: -10px;
+}
+
+.service-item__text {
+  margin-left: 15px;
+}
+
+/* Style Why Us */
+
+.why-us {
+  padding-top: 100px;
+}
+
+.why-us .card .card-body .card-icon {
+  width: 32px;
+}
+
+/* Style Testimonial */
+
+.testimoni {
+  padding-top: 100px;
+}
+
+.testimoni .card {
+  background-color: #f1f3ff;
+}
+
+.testimoni-profile {
+  width: 80px;
+}
+
+.testimoni-rate {
+  width: 80px;
+}
+
+.testimoni-identity {
+  font-weight: bold;
+}
+
+.carousel {
+  overflow: hidden;
+}
+
+.carousel-inner {
+  width: 150%;
+  left: -25%;
+}
+
+.carousel-item .card:first-child,
+.carousel-item .card:last-child {
+  display: none;
+}
+
+.carousel-item-next:not(.carousel-item-start),
+.carousel-item-end.active {
+  transform: translate3d(33%, 0, 0);
+}
+
+.carousel-item-prev:not(.carousel-item-end),
+.carousel-item-start.active {
+  transform: translate3d(-33%, 0, 0);
+}
+
+.carousel-item .card {
+  display: flex !important;
+  float: left;
+  margin-right: 10px;
+  width: calc(33% - 10px);
+}
+
+.carousel-control {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.carousel-control__prev,
+.carousel-control__next {
+  background-color: transparent;
+  color: #000000;
+  position: relative;
+  display: inline-block;
+  margin-right: 25px;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #c4c4c4;
+  border-radius: 25px;
+  opacity: 1;
+}
+
+.carousel-control__prev:hover,
+.carousel-control__next:hover {
+  color: #ffffff;
+  border: none;
+  background-color: #5cb85f;
+}
+
+/* Style CTA Banner */
+
+.cta-banner {
+  padding-top: 100px;
+}
+
+.cta-banner .card {
+  background-color: #0d28a6;
+  padding: 40px 150px;
+  border: none;
+  border-radius: 10px;
+}
+
+.cta-banner__title {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.cta-banner__subtitle {
+  color: #ffffff;
+  padding: 0 80px;
+}
+
+/* Style FAQ */
+
+.faq {
+  padding-top: 100px;
+}
+
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer-link {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-img {
+  width: 32px;
+  margin-right: 15px;
+}
+
+@media only screen and (max-width: 575px) {
+  .hero {
+    height: 750px;
+  }
+
+  .service-wrapper {
+    text-align: center;
+  }
+
+  .why-us__box {
+    margin-top: 15px;
+  }
+
+  .cta-banner .card {
+    padding: 0;
+  }
+
+  .cta-banner__subtitle {
+    padding: 0;
+  }
+}
